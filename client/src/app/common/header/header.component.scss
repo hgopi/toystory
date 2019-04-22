@@ -1,0 +1,72 @@
+@import './../../../assets/variable';
+@import './../../../assets/common';
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .nav-top {
+        padding: 10px 24px;
+        background-color: $bgColorPrimary;
+        @include flex(row, center, space-between);
+        font-size: 11px;
+        .nav-top--info {
+            color: #fff;
+            line-height: 18px;
+            .nav-top--text {
+                margin-right: 16px;
+            }
+        }
+        .nav-social {
+            li {
+                display: inline-block;
+                padding: 0 5px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .nav-main {
+        box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, .12);
+        .wrapper {
+            height: 72px;
+            .nav-brand {
+                font-size: 22px;
+                font-family: 'Varela Round', sans-serif;
+                text-decoration: none;
+                line-height: 32px;
+                @include flex;
+            }
+            .nav-routes, .cart-wrapper {
+                @include flex;
+                padding: 0 24px;
+                a {
+                    padding: 12px 18px;
+                    text-decoration: none;
+                    @include flex;
+                    span {
+                        display: inline-block;
+                        &.cart-text {
+                            margin-right: 0.5em;
+                        }
+                        &.badge {
+                            margin-left: 0.5em;
+                            background-color: $bgColorPrimary;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/common';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    @include flex(row, stretch, space-between);
+    margin: auto;
+    color: #333333;
+}
+.page-wrapper {
+    overflow: hidden;
+    padding-top: 104px;
+}
+section {
+    @include flex(column);
+}
+.button {
+    height: 48px;
+    padding: 12px 28px;
+    justify-content: center;
+    border-radius: 24px;
+    background-color: #a5c926;
+    transition: transform 300ms ease, box-shadow 300ms ease, -webkit-transform 300ms ease;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+    &:hover {
+        color: #fff;
+    }
+}
